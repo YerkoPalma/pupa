@@ -1,0 +1,129 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.6.1/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.6.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@2.15.9
+3 info using node@v4.6.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/workspace',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/@ypalma/pupa/1.1.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+10 verbose tar pack [ '/home/ubuntu/.npm/@ypalma/pupa/1.1.0/package.tgz',
+10 verbose tar pack   '/home/ubuntu/workspace' ]
+11 verbose tarball /home/ubuntu/.npm/@ypalma/pupa/1.1.0/package.tgz
+12 verbose folder /home/ubuntu/workspace
+13 info prepublish @ypalma/pupa@1.1.0
+14 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/@ypalma/pupa/1.1.0/package.tgz
+15 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+16 silly cache afterAdd @ypalma/pupa@1.1.0
+17 verbose afterAdd /home/ubuntu/.npm/@ypalma/pupa/1.1.0/package/package.json not in flight; writing
+18 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+19 verbose afterAdd /home/ubuntu/.npm/@ypalma/pupa/1.1.0/package/package.json written
+20 silly publish { name: '@ypalma/pupa',
+20 silly publish   version: '1.1.0',
+20 silly publish   description: 'Simple micro templating',
+20 silly publish   license: 'MIT',
+20 silly publish   repository:
+20 silly publish    { type: 'git',
+20 silly publish      url: 'git+https://github.com/yerkopalma/pupa.git' },
+20 silly publish   author: { name: 'YerkoPalma' },
+20 silly publish   engines: { node: '>=4' },
+20 silly publish   scripts: { test: 'xo && ava' },
+20 silly publish   files: [ 'index.js' ],
+20 silly publish   keywords:
+20 silly publish    [ 'string',
+20 silly publish      'formatting',
+20 silly publish      'template',
+20 silly publish      'object',
+20 silly publish      'format',
+20 silly publish      'interpolate',
+20 silly publish      'interpolation',
+20 silly publish      'templating',
+20 silly publish      'str',
+20 silly publish      'obj',
+20 silly publish      'tpl',
+20 silly publish      'expand',
+20 silly publish      'simple',
+20 silly publish      'replace',
+20 silly publish      'placeholders',
+20 silly publish      'values',
+20 silly publish      'fmt',
+20 silly publish      'transform',
+20 silly publish      'micro' ],
+20 silly publish   devDependencies: { ava: '*', xo: '*' },
+20 silly publish   xo: { esnext: true },
+20 silly publish   readme: '# pupa [![Build Status](https://travis-ci.org/sindresorhus/pupa.svg?branch=master)](https://travis-ci.org/sindresorhus/pupa)\n\n> Simple micro templating\n\nUseful when all you need is to fill in some placeholders.\n\n\n## Install\n\n```\n$ npm install --save pupa\n```\n\n\n## Usage\n\n```js\nconst pupa = require(\'pupa\');\n\npupa(\'The mobile number of {name} is {phone.mobile}\', {\n\tname: \'Sindre\',\n\tphone: {\n\t\tmobile: \'609 24 363\'\n\t}\n});\n//=> \'The mobile number of Sindre is 609 24 363\'\n\npupa(\'I like {0} and {1}\', [\'🦄\', \'🐮\']);\n//=> \'I like 🦄 and 🐮\'\n```\n\n\n## API\n\n### pupa(template, data)\n\n#### template\n\nType: `string`\n\nText with placeholders for `data` properties.\n\n#### data\n\nType: `Object` `Array`\n\nData to interpolate into `template`.\n\n\n## FAQ\n\n### What about template literals?\n\nTemplate literals expand on creation. This module expands the template on execution, which can be useful if either or both template and data are lazily created or user-supplied.\n\n\n## License\n\nMIT © [Sindre Sorhus](https://sindresorhus.com)\n',
+20 silly publish   readmeFilename: 'readme.md',
+20 silly publish   gitHead: '4ac7880aed6fa977ca4dde3a2b8bca0daebc3d7b',
+20 silly publish   bugs: { url: 'https://github.com/yerkopalma/pupa/issues' },
+20 silly publish   homepage: 'https://github.com/yerkopalma/pupa#readme',
+20 silly publish   _id: '@ypalma/pupa@1.1.0',
+20 silly publish   _shasum: 'fd821522c65b2f7ea769f9a6e2aa8f8b1e34c07b',
+20 silly publish   _from: '.' }
+21 verbose getPublishConfig undefined
+22 silly mapToRegistry name @ypalma/pupa
+23 silly mapToRegistry scope (from package name) @ypalma
+24 verbose mapToRegistry no registry URL found in name for scope @ypalma
+25 silly mapToRegistry using default registry
+26 silly mapToRegistry registry https://registry.npmjs.org/
+27 silly mapToRegistry data Result {
+27 silly mapToRegistry   raw: '@ypalma/pupa',
+27 silly mapToRegistry   scope: '@ypalma',
+27 silly mapToRegistry   name: '@ypalma/pupa',
+27 silly mapToRegistry   rawSpec: '',
+27 silly mapToRegistry   spec: 'latest',
+27 silly mapToRegistry   type: 'tag' }
+28 silly mapToRegistry uri https://registry.npmjs.org/@ypalma%2fpupa
+29 verbose publish registryBase https://registry.npmjs.org/
+30 silly publish uploading /home/ubuntu/.npm/@ypalma/pupa/1.1.0/package.tgz
+31 verbose request uri https://registry.npmjs.org/@ypalma%2fpupa
+32 verbose request sending authorization for write operation
+33 info attempt registry request try #1 at 12:16:53 PM
+34 verbose request using bearer token for auth
+35 verbose request id cc3c183bb34123bc
+36 http request PUT https://registry.npmjs.org/@ypalma%2fpupa
+37 http 402 https://registry.npmjs.org/@ypalma%2fpupa
+38 verbose headers { 'content-type': 'application/json',
+38 verbose headers   'cache-control': 'max-age=0',
+38 verbose headers   'content-length': '119',
+38 verbose headers   'accept-ranges': 'bytes',
+38 verbose headers   date: 'Wed, 08 Feb 2017 12:16:54 GMT',
+38 verbose headers   via: '1.1 varnish',
+38 verbose headers   connection: 'keep-alive',
+38 verbose headers   'x-served-by': 'cache-ord1738-ORD',
+38 verbose headers   'x-cache': 'MISS',
+38 verbose headers   'x-cache-hits': '0',
+38 verbose headers   'x-timer': 'S1486556213.864985,VS0,VE812' }
+39 verbose request invalidating /home/ubuntu/.npm/registry.npmjs.org/_40ypalma_252fpupa on PUT
+40 error publish Failed PUT 402
+41 verbose stack Error: You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @ypalma/pupa
+41 verbose stack     at makeError (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+41 verbose stack     at CachingRegistryClient.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+41 verbose stack     at Request._callback (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+41 verbose stack     at Request.self.callback (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/request/request.js:200:22)
+41 verbose stack     at emitTwo (events.js:87:13)
+41 verbose stack     at Request.emit (events.js:172:7)
+41 verbose stack     at Request.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/request/request.js:1067:10)
+41 verbose stack     at emitOne (events.js:82:20)
+41 verbose stack     at Request.emit (events.js:169:7)
+41 verbose stack     at IncomingMessage.<anonymous> (/home/ubuntu/.nvm/versions/node/v4.6.1/lib/node_modules/npm/node_modules/request/request.js:988:12)
+42 verbose statusCode 402
+43 verbose pkgid @ypalma/pupa
+44 verbose cwd /home/ubuntu/workspace
+45 error Linux 4.8.2-c9
+46 error argv "/home/ubuntu/.nvm/versions/node/v4.6.1/bin/node" "/home/ubuntu/.nvm/versions/node/v4.6.1/bin/npm" "publish"
+47 error node v4.6.1
+48 error npm  v2.15.9
+49 error code E402
+50 error You need a paid account to perform this action. For more info, visit: https://www.npmjs.com/private-modules : @ypalma/pupa
+51 error If you need help, you may report this error at:
+51 error     <https://github.com/npm/npm/issues>
+52 verbose exit [ 1, true ]
