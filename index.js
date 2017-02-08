@@ -12,7 +12,7 @@ module.exports = (tpl, data) => {
 
 	if (Array.isArray(data) && tpl.indexOf('{this}') > 0) {
 		return data.reduce((acc, item) => {
-			return acc + tpl.replace('{this}', item);
+			return acc + tpl.replace(/{this}/g, item);
 		}, '');
 	}
 
