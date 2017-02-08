@@ -1,14 +1,10 @@
 {
-  "name": "pupa",
+  "name": "@ypalma/pupa",
   "version": "1.0.0",
   "description": "Simple micro templating",
   "license": "MIT",
-  "repository": "sindresorhus/pupa",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
+  "repository": "yerkopalma/pupa",
+  "author": "YerkoPalma",
   "engines": {
     "node": ">=4"
   },
